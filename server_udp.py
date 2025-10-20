@@ -6,7 +6,7 @@ import socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
-server_address = ('0.0.0.0', 10000)
+server_address = ('0.0.0.0', 20002)
 sock.bind(server_address)
 sock.settimeout(1.0)  # permet d'interrompre avec Ctrl+C
 

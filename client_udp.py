@@ -7,7 +7,7 @@ import sys
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 # Send data
-server_address = ('localhost', 10000)
+server_address = ('10.20.60.46', 10000)
 print('Envoi UDP a %s sur le port %s' % server_address)
 message = 'Ceci est un messsage. Il va etre repete par le serveur.'
 print('Envoi : "%s"' % message)
