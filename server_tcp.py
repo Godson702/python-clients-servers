@@ -8,7 +8,7 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
 # Bind the socket to the port
-server_address = ('0.0.0.0', 10000)
+server_address = ('0.0.0.0', 80)
 print('Demarrage du serveur TCP sur %s avec le port %s' % server_address)
 sock.bind(server_address)
 

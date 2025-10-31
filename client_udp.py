@@ -7,7 +7,11 @@ import sys
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 # Send data
+<<<<<<< HEAD
 server_address = ('google.com', 80)
+=======
+server_address = ('10.20.60.46', 10000)
+>>>>>>> c189f034f81e211eb508d3fa3436067e95158ff8
 print('Envoi UDP a %s sur le port %s' % server_address)
 message = 'bmw m5.'
 print('Envoi : "%s"' % message)
