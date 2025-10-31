@@ -7,9 +7,9 @@ import sys
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 # Send data
-server_address = ('localhost', 10000)
+server_address = ('google.com', 80)
 print('Envoi UDP a %s sur le port %s' % server_address)
-message = 'Ceci est un messsage. Il va etre repete par le serveur.'
+message = 'bmw m5.'
 print('Envoi : "%s"' % message)
 sock.sendto(message.encode(), server_address)
     
